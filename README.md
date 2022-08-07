@@ -15,7 +15,7 @@
 ## 关于文档
 部分文章收集自网络，请尊重文章作者的劳动成果。如无特别注明，未经允许禁止转载！
 
-文档源码已上传至[GitHub](https://github.com/TatsukiMengChen/PC)
+文档源码已上传至[GitHub](https://github.com/TatsukiMengChen/docsify-template)
 
 ## 联系作者
 QQ：3224815186  
