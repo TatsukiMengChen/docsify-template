@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>极简文档模板</title>
+
+  <!-- 解除其他平台的防盗链 -->
+  <meta name="referrer" content="never">
+  <link rel="shortcut icon" href="icon.jpg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./style/vue.css">
+  <link rel="stylesheet" type="text/css" href="style/myStyle.css" />
+
+</head>
+
+<body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+  <div id="app">精彩即将呈现...</div>
+  <a class="to-top">↑</a>
+
+  <script>
+    window.$docsify = {
+      el: '#app',
+      name: '<h5>极简文档模板</h5>',
+      //repo: 'https://github.com/TatsukiMengChen/PC',
+      loadNavbar: true, //开启导航栏
+      coverpage: true, //开启封面
+      loadSidebar: true, //开启侧边栏
+      auto2top: true, //切换页面自动回到顶部
+      subMaxLevel: 3, //目录最大级数
+      maxLevel: 4, //可配置最大支持渲染的标题层级
+      homepage: 'README.md', //设置中文的README.md作为首页
+
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
+      //添加搜索功能，中文和英文文档同时搜索
+      search: {
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        },
+        //如果中文和英文文档都没有内容，则返回
+        noData: {
+          '/': '找不到结果'
+        },
+
+        depth: 4, //搜索标题的最大层级
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      }, //增加搜索框
+
+
+
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        ossChapterText: true,
+      },
+
+      footer: {
+        copy: 'Copyright &copy; 2021-2022 </span>',
+        auth: ' <strong>Tatsuki丶梦辰</strong>',
+        content: '<div>部分文章收集自网络，请尊重文章作者的劳动成果。如无特别注明，未经允许禁止转载！</div>',
+        pre: '<hr/>',
+        style: 'text-align: center;',
+      },
+
+    }
+  </script>
+
+  <script src="./js/docsify.min.js"></script>
+
+  <!-- docsify表情包 -->
+  <!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>-->
+
+  <!-- 分页导航 -->
+  <script src="./js/docsify-pagination.min.js"></script>
+  <!-- 复制代码到剪切板 -->
+  <script src="./js/docsify-copy-code.js"></script>
+
+  <!-- 搜索功能 -->
+  <script src="./js/search.min.js"></script>
+
+  <!-- C++、Java、python、bash等等语法高亮 -->
+  <script src="./js/prism-bash.min.js"></script>
+  <script src="./js/prism-lua.js"></script>
+
+  <!-- CDN files for docsify-katex -->
+  <script src="./js/docsify-katex.js"></script>
+
+
+  <!-- PWA 离线化 -->
+  <script>
+
+    //if (typeof navigator.serviceWorker !== 'undefined') {
+    //  navigator.serviceWorker.register('sw.js')
+    //}
+  </script>
+
+  <!-- 置顶插件 -->
+  <script src="style/jquery-1.11.3.min.js"></script>
+  <script src="style/jquery.toTop.min.js"></script>
+  <script>
+    $('.to-top').toTop();
+  </script>
+
+  <!-- Markdown 引用样式美化 -->
+  <script src="./js/docsify-plugin-flexible-alerts.min.js"></script>
+
+  <!-- 图片缩放 -->
+  <script src="./js/zoom-image.js"></script>
+
+  <!-- 文档页脚增强 -->
+  <script src="./js/docsify-footer.js"></script>
+
+
+</body>
+
+</html>
